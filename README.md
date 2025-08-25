@@ -6,4 +6,5 @@ You can map/persist a nodes config.toml, and block database via volumes. Note vo
 
 
 # Usage # 
-` docker build -t tari-node .  \n docker compose up  `
+``` docker build -t tari-node . 
+docker compose up  ```
