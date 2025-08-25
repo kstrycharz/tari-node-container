@@ -1,0 +1,15 @@
+services:
+  tari-node:
+    build: .
+    container_name: tari-node
+    ports:
+      - "18142:18142"
+    volumes:
+      - /home/ubuntu/.tari/mainnet/data/base_node/:/home/ubuntu/.tari/mainnet/data/base_node/
+      - /home/ubuntu/.tari/mainnet/config/config.toml:/home/ubuntu/.tari/mainnet/config/config.toml
+
+    restart: unless-stopped
+
+
+
+
